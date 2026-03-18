@@ -1,0 +1,39 @@
+# Secrets
+.env
+backend/.env
+frontend/agri-ui/.env
+
+# Python virtual environment
+backend/venv/
+venv/
+
+# Trained model files (too large — stored on HuggingFace)
+backend/models/*.pkl
+backend/models/*.pth
+backend/models/*.pt
+backend/models/*.h5
+backend/models/class_names.json
+backend/models/soil_class_names.json
+
+# Datasets (too large — 2GB+)
+backend/datasets/plantvillage/
+backend/datasets/soil_types/
+backend/datasets/*.csv
+
+# Node modules
+frontend/agri-ui/node_modules/
+
+# Vite build output
+frontend/agri-ui/dist/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
