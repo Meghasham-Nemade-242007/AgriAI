@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
+# Load environment variables from .env file for api keys
 load_dotenv()
 
 # ─────────────────────────────────────
