@@ -62,7 +62,7 @@ def validate_leaf_image(image_bytes):
         image_base64 = base64.b64encode(image_bytes).decode('utf-8')
 
         response = client.chat.completions.create(
-            model=GROQ_TEXT_MODEL,
+            model=GROQ_VISION_MODEL,
             messages=[
                 {
                     "role": "user",
