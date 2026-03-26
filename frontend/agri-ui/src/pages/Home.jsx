@@ -7,13 +7,13 @@ export default function Home() {
     return (
         <div className="animate-fade-up" style={{ width: '100%' }}>
 
-            {/* Hero - Full Screen Width & Height */}
+            {/* Hero - Full Screen Width & Height DYP */}
             <div style={{ position: 'relative', width: '100%', minHeight: 'calc(100vh - 80px)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 0 }}>
                     {/* User requested green colors for Liquid Ether */}
                     <LiquidEther colors={['#1E8449', '#27AE60', '#2ECC71']} />
                 </div>
-                
+
                 <div style={{ position: 'relative', zIndex: 1, padding: '24px', textAlign: 'center', width: '100%', minHeight: 'calc(100vh - 80px)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', background: 'radial-gradient(circle, rgba(10,13,11,0.2) 0%, rgba(10,13,11,0.85) 100%)' }}>
                     <h1 className="responsive-hero-h1" style={{
                         color: 'var(--text-primary)',
@@ -22,7 +22,7 @@ export default function Home() {
                         letterSpacing: '-1.5px',
                         lineHeight: 1.1
                     }}>
-                        Smart Farming <br/>
+                        Smart Farming <br />
                         <span className="gradient-text-green">Starts Here</span>
                     </h1>
                     <p style={{
@@ -136,7 +136,7 @@ export default function Home() {
                         ))}
                     </div>
                 </div>
-                
+
                 {/* Banner */}
                 <div className="card-hover glass-panel-heavy animate-fade-up responsive-card-inner" style={{ borderRadius: 24, textAlign: 'center' }}>
                     <h2 className="responsive-h3" style={{ marginBottom: 24, fontWeight: 800 }}>Ready to optimize your harvest?</h2>
