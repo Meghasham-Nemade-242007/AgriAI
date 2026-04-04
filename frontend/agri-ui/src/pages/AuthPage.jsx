@@ -25,7 +25,7 @@ export default function AuthPage() {
     const payload = activeTab === 'signup' ? { name, email, password } : { email, password };
 
     try {
-      const res = await fetch(`https://agriai-auth.onrender.com`, {
+      const res = await fetch(`https://agriai-auth.onrender.com${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
