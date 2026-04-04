@@ -104,7 +104,7 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Full-Screen Floating Menu Overlay */}
-            <div className={`md:hidden fixed inset-0 z-[105] bg-[#080a09] transition-transform duration-300 ease-in-out transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} flex flex-col pt-24 px-8 pb-12 h-[100dvh]`}>
+            <div className={`md:hidden fixed inset-0 z-[105] bg-[#080a09] transition-all duration-300 ease-in-out transform ${isOpen ? 'translate-x-0 opacity-100 pointer-events-auto' : 'translate-x-full opacity-0 pointer-events-none'} flex flex-col pt-24 px-8 pb-12 h-[100dvh]`}>
                 <div className="flex flex-col gap-6">
                     <Link onClick={() => setIsOpen(false)} to="/" className="block text-2xl font-bold text-white border-b border-white/5 pb-4 hover:translate-x-4 hover:text-[#7fda96] active:scale-[0.98] origin-left active:opacity-60 transition-all duration-300">Home</Link>
                     <Link onClick={() => setIsOpen(false)} to="/soil" className="block text-2xl font-bold text-[#becabd] border-b border-white/5 pb-4 hover:translate-x-4 hover:text-[#7fda96] active:scale-[0.98] origin-left active:opacity-60 transition-all duration-300">Soil Analysis</Link>
