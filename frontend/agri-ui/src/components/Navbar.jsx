@@ -7,7 +7,9 @@ export default function Navbar() {
     const navigate = useNavigate();
     const [isOpen, setIsOpen] = useState(false);
     const [isProfileOpen, setIsProfileOpen] = useState(false);
-    const { user, logout } = useAuth();
+    const { user, logout, loading } = useAuth();
+
+    if (loading) return null;
 
     if (location.pathname === '/signin' || location.pathname === '/signup' || location.pathname === '/auth') {
         return null;
