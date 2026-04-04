@@ -39,7 +39,7 @@ export default function ImageUploader({ onImageSelect, color }) {
                     <img
                         src={preview}
                         alt="Preview"
-                        style={{ maxHeight: 200, maxWidth: '100%', borderRadius: 8 }}
+                        style={{ maxHeight: 200, maxWidth: '100%', borderRadius: 8, margin: '0 auto', display: 'block' }}
                     />
                 ) : (
                     <div>
@@ -61,21 +61,25 @@ export default function ImageUploader({ onImageSelect, color }) {
                 onChange={(e) => handleFile(e.target.files[0])}
             />
             {preview && (
-                <button
-                    onClick={(e) => { e.stopPropagation(); setPreview(null); onImageSelect(null); }}
-                    style={{
-                        marginTop: 12,
-                        padding: '8px 16px',
-                        background: 'transparent',
-                        color: 'var(--error-red)',
-                        border: '1px solid var(--border-color)',
-                        borderRadius: 6,
-                        fontSize: 13,
-                        fontWeight: 600
-                    }}
-                >
-                    Remove Image
-                </button>
+                <div style={{ textAlign: 'center' }}>
+                    <button
+                        onClick={(e) => { e.stopPropagation(); setPreview(null); onImageSelect(null); }}
+                        style={{
+                            marginTop: 12,
+                            padding: '8px 16px',
+                            background: 'transparent',
+                            color: 'var(--error-red)',
+                            border: '1px solid var(--border-color)',
+                            borderRadius: 6,
+                            fontSize: 13,
+                            fontWeight: 600,
+                            display: 'inline-block'
+                        }}
+                        className="hover:bg-red-500/10 transition-colors"
+                    >
+                        Remove Image
+                    </button>
+                </div>
             )}
         </div>
     );
