@@ -25,7 +25,7 @@ export default function AuthPage() {
     const payload = activeTab === 'signup' ? { name, email, password } : { email, password };
 
     try {
-      const res = await fetch(`http://localhost:5000${endpoint}`, {
+      const res = await fetch(`https://agriai-auth.onrender.com`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -91,9 +91,8 @@ export default function AuthPage() {
             </div>
 
             {toast && (
-              <div className={`mb-8 p-4 rounded-xl border flex items-center gap-3 animate-fade-in shadow-lg ${
-                toast.type === 'success' ? 'bg-[#152e1c] text-[#7fda96] border-[#7fda96]/30' : 'bg-[#3b1212] text-[#ffb4ab] border-[#ffb4ab]/30'
-              }`}>
+              <div className={`mb-8 p-4 rounded-xl border flex items-center gap-3 animate-fade-in shadow-lg ${toast.type === 'success' ? 'bg-[#152e1c] text-[#7fda96] border-[#7fda96]/30' : 'bg-[#3b1212] text-[#ffb4ab] border-[#ffb4ab]/30'
+                }`}>
                 {toast.type === 'success' ? (
                   <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
