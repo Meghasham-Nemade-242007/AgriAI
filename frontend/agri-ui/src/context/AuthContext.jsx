@@ -11,7 +11,8 @@ export const AuthProvider = ({ children }) => {
       const token = localStorage.getItem('token');
       if (token) {
         try {
-          const res = await fetch('https://agriai-auth.onrender.com/api/auth/me', {
+          const AUTH_API_URL = import.meta.env.VITE_AUTH_API_URL || 'http://localhost:5000';
+          const res = await fetch(`${AUTH_API_URL}/api/auth/me`, {
             headers: { Authorization: `Bearer ${token}` }
           });
           if (res.ok) {
