@@ -1,14 +1,3 @@
----
-title: AgriAI API
-emoji: 🌿
-colorFrom: green
-colorTo: blue
-sdk: docker
-app_port: 7860
-app_file: Dockerfile
-pinned: false
----
-
 <div align="center">
   <h1>🌱 AgriAI Platform</h1>
   <p><strong>AI-powered agricultural assistant for soil analysis and plant disease detection.</strong></p>
