@@ -109,6 +109,7 @@ npm run dev
 
 ### Models
 To run the project locally, download the trained models and place them in the `backend/models/` directory:
+To train the models use the .ipynb files from the /notebooks folder and use the appropriate datasets.
 - `crop_model.pkl`
 - `disease_model.pth`
 - `soil_model.pth`
