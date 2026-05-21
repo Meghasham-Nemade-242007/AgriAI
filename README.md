@@ -66,7 +66,7 @@ npm start
 # or for development: npm run dev
 ```
 
-### 2. Main Backend (FastAPI)
+### 2. Main Backend (FastAPI-Deployed on HuggingFace)
 
 ```bash
 cd backend
